@@ -19,7 +19,8 @@ from tf.keras.models import Sequential
 from tf.keras.layers import Dense, Dropout
 from tf.keras.optimizers import RMSprop
 
-tf.__version__
+print(tf.__version__)
+print(tf.keras.__version__)
 
 batch_size = 128
 num_classes = 10
