@@ -4,15 +4,22 @@ Gets to 98.40% test accuracy after 20 epochs
 2 seconds per epoch on a K520 GPU.
 '''
 
+# Slightly modified version of
+# https://github.com/keras-team/keras/blob/master/examples/mnist_mlp.py
+# Run walkthrough: mnist_mlp_run.txt
+# Command: python mnist_mlp.py
+# -Cobalt 10/31/2019
+
 from __future__ import print_function
 
-import tensorflow 
+import tensorflow as tf
 
+from tf.keras.datasets import mnist
+from tf.keras.models import Sequential
+from tf.keras.layers import Dense, Dropout
+from tf.keras.optimizers import RMSprop
 
-from tensorflow.keras.datasets import mnist
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import RMSprop
+tf.__version__
 
 batch_size = 128
 num_classes = 10
@@ -31,8 +38,8 @@ print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
 
 # convert class vectors to orflow.inary class matrices
-y_train = tensorflow.keras.utils.to_categorical(y_train, num_classes)
-y_test = tensorflow.keras.utils.to_categorical(y_test, num_classes)
+y_train = tf.keras.utils.to_categorical(y_train, num_classes)
+y_test = tf.keras.utils.to_categorical(y_test, num_classes)
 
 model = Sequential()
 model.add(Dense(512, activation='relu', input_shape=(784,)))
