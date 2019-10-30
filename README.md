@@ -19,7 +19,6 @@ conda activate keras-gpu
 
 ## Test run setup
 
-### Model
 ```
 Model: "sequential"
 _________________________________________________________________
@@ -42,9 +41,7 @@ _________________________________________________________________
 Train on 60000 samples, validate on 10000 samples
 ```
 
-### Run 
-
-[mnist_mlp.py](https://github.com/Intelligent-Systems-Laboratory/DLBeginnerExercises/blob/master/mnist_mlp.py)
+Run [mnist_mlp.py](https://github.com/Intelligent-Systems-Laboratory/DLBeginnerExercises/blob/master/mnist_mlp.py)
 
 ```python
 python mnist_mlp.py
