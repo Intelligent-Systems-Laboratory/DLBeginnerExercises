@@ -5,6 +5,7 @@ Deep Learning Exercises for Beginners using Keras (Tensorflow)
 ## Setup
 - Anaconda (conda 4.7.11)
 - Cuda (V10.0.130)
+- Python 3.6
 
 ## Create new environment
 ```
