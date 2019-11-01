@@ -50,6 +50,6 @@ python mnist_mlp.py
 ## Sample Output
 [mnist_mlp_run.txt](https://github.com/Intelligent-Systems-Laboratory/DLBeginnerExercises/blob/master/mnist_mlp_run.txt)
 
-## After verifying yoursetup, try this tutorial:
+## After verifying your setup, try this tutorial:
 
 ![KerasTutorialDeepLearninginPython.ipynb](https://github.com/Intelligent-Systems-Laboratory/DLBeginnerExercises/blob/master/KerasTutorialDeepLearninginPython.ipynb)
